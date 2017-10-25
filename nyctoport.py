@@ -8,7 +8,7 @@ from datetime import datetime
 subprocess.call('clear', shell=True)
 
 # Ask for input
-remoteServer    = raw_input("Enter a remote host to scan: ")
+remoteServer    = raw_input("Enter the Fucking Victim host to scan: ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
 # Print a nice banner with information on which host we are about to scan
@@ -51,4 +51,3 @@ total =  t2 - t1
 
 # Printing the information to screen
 print 'Scan Fucking Completed in: ', total
-
