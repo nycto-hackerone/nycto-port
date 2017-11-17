@@ -1,11 +1,17 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import socket
 import subprocess
 import sys
 from datetime import datetime
 
-# Clear the screen
-subprocess.call('clear', shell=True)
+print "███╗   ██╗██╗   ██╗ ██████╗████████╗ ██████╗       ██████╗  ██████╗ ██████╗ ████████╗"
+print "████╗  ██║╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔═══██╗      ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝"
+print "██╔██╗ ██║ ╚████╔╝ ██║        ██║   ██║   ██║█████╗██████╔╝██║   ██║██████╔╝   ██║   "
+print "██║╚██╗██║  ╚██╔╝  ██║        ██║   ██║   ██║╚════╝██╔═══╝ ██║   ██║██╔══██╗   ██║   "
+print "██║ ╚████║   ██║   ╚██████╗   ██║   ╚██████╔╝      ██║     ╚██████╔╝██║  ██║   ██║   "
+print "╚═╝  ╚═══╝   ╚═╝    ╚═════╝   ╚═╝    ╚═════╝       ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   "
+                                                                                     
 
 # Ask for input
 remoteServer    = raw_input("Enter the Fucking Victim host to scan: ")
@@ -48,6 +54,9 @@ t2 = datetime.now()
 
 # Calculates the difference of time, to see how long it took to run the script
 total =  t2 - t1
+
+# Printing the information to screen
+print 'Scan Fucking Completed in: ', total
 
 # Printing the information to screen
 print 'Scan Fucking Completed in: ', total
